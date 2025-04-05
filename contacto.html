@@ -14,16 +14,23 @@
         <section>
             <h2>Envianos un mensaje</h2>
             <form>
-                <input class="name" type="texto" placeholder="Nombre y Apellido" required>
+                <input class="name" id="nombre" type="texto" placeholder="Nombre y Apellido" required>
                 <input class="email"type="email" placeholder="email" required>
                 <input class="texto"type="texto" placeholder="mensaje" required>
                 <input type="submit" value="Enviar mensaje">
             </form>
         </section>
-
     </main>
     <footer>
         <p>&copy; 2024 Cultura Argentina</p>
     </footer>
+    <script>
+        function enviarFormulario(){
+            event.preventDefault;
+            var nombre = document.getElementById("nombre").value;
+            console.log("Nombre y apellido:". nombre);
+            alert("nombre y apellido: "+nombre);
+        }
+    </script>
 </body>
 </html>
